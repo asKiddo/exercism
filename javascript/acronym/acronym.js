@@ -1,12 +1,6 @@
 var Acronyms = function () {
     this.parse = function(phrase) {
-        return 'PNG';
+        var words = phrase.split(' ');
+        return words[0][0].toUpperCase() + words[1][0].toUpperCase() + words[2][0].toUpperCase();
     };
 };
-
-module.exports = {
-var parse = function (phrase) {
-    return 'PNG';
-};
-}
-//module.exports = parse;
